@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="../assets/css/all.min.css">
   <link rel="stylesheet" href="../assets/css/main.css">
   <link rel="stylesheet" href="../assets/css/style.css">
-  <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="css/edu-services.css">
   <link rel="stylesheet" href="../assets/css/header.css">
   <link rel="stylesheet" href="../assets/css/footer.css">
   <link rel="stylesheet" href="../assets/css/responsive.css">
@@ -54,6 +54,9 @@
         <a class="navbar-brand d-lg-none" href="index.html">
           <img src="../assets/img/logo.png" alt="شعار بيتهوفن سيتي" loading="lazy">
         </a>
+<a class="navbar-brand logo-scroll  " href="index.html">
+  <img src="../assets/img/logo.png" alt="logo">
+</a>
         <!-- Desktop Menu -->
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav gap-3">
@@ -88,22 +91,20 @@
           <div class="dropdown">
             <button class="btn lang-switch d-flex align-items-center justify-content-between" type="button"
               data-bs-toggle="dropdown" aria-expanded="false">
-              <div class="d-flex align-items-center gap-2">
-                <img src="../assets/img/home/global.svg" alt="Language" width="20" height="20">
+                <img src="../assets/img/home/global.svg" alt="Language">
                 <span>العربية</span>
-              </div>
-              <img src="../assets/img/home/arowwdown.svg" alt="فتح القائمة" width="12" height="12">
+              <img src="../assets/img/home/arowwdown.svg" alt="فتح القائمة">
             </button>
             <ul class="dropdown-menu dropdown-menu-end">
               <li>
                 <a class="dropdown-item d-flex align-items-center gap-2 active" href="index.html">
-                  <img src="../assets/img/global.svg" width="20" height="20" alt="">
+                  <img src="../assets/img/ar.svg" width="20" height="20" alt="">
                   العربية
                 </a>
               </li>
               <li>
                 <a class="dropdown-item d-flex align-items-center gap-2" href="index-en.html">
-                  <img src="assets/img/global.svg" width="20" height="20" alt="">
+                  <img src="../assets/img/en.svg" width="20" height="20" alt="">
                   English
                 </a>
               </li>
@@ -113,90 +114,101 @@
       </div>
     </nav>
     <!-- offcanvas -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-          القائمة
-        </h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="إغلاق القائمة">
-        </button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html">الرئيسية</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="aboutus.html">عن الشركة</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="education.html">التعليم العالي</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="job.html">التدريب المهني</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="guide.html">دليل بيتهوفن</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">تواصل معنا</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+  <div class="offcanvas-header d-flex align-items-center justify-content-between">
+    
+    <!-- اللوغو — على اليمين أول -->
+    <h5 class="offcanvas-title mb-0" id="offcanvasNavbarLabel">
+      <a href="index.html">
+        <img src="assets/img/logo.png" alt="شعار بيتهوفن سيتي" height="50">
+      </a>
+    </h5>
+
+    <!-- زر الإغلاق — على اليسار ثاني -->
+<button type="button" class="btn-close me-auto" data-bs-dismiss="offcanvas" aria-label="إغلاق القائمة"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="index.html">الرئيسية</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="aboutus.html">عن الشركة</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="education.html">التعليم العالي</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="job.html">التدريب المهني</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="guide.html">دليل بيتهوفن</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">تواصل معنا</a>
+      </li>
+    </ul>
+  </div>
+</div>
   </header>
   <!-- header end -->
-      <!-- Breadcrumb start-->
-    <div class="custom-container pt-5">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb justify-content-start">
-          <li class="breadcrumb-item"><a href="#">الرئيسية</a></li>
-          <li class="breadcrumb-item"><a href="#">التعليم العالي</a></li>
-          <li class="breadcrumb-item"> <a href="#">السيرة الذاتية CV</a></li>
-        </ol>
-      </nav>
-    </div>
-    <!-- Breadcrumb end-->
-    <!-- custom-services start -->
-    <section class="custom-services py-5">
-      <div class="custom-container ">
-        <div class="coverLetter-hero custom-hero" style="background-image: url('../assets/img/education/servicesimg2.jpg'); background-position: center -30px;">
-        </div>
+  <!-- Breadcrumb start-->
+  <div class="custom-container pt-5">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb justify-content-start">
+        <li class="breadcrumb-item"><a href="#">الرئيسية</a></li>
+        <li class="breadcrumb-item"><a href="#">التعليم العالي</a></li>
+        <li class="breadcrumb-item"> <a href="#">السيرة الذاتية CV</a></li>
+      </ol>
+    </nav>
+  </div>
+  <!-- Breadcrumb end-->
+  <!-- custom-services start -->
+  <section class="custom-services py-5">
+    <div class="custom-container ">
+      <div class="coverLetter-hero custom-hero"
+        style="background-image: url('../assets/img/education/servicesimg2.jpg'); background-position: center -30px;">
       </div>
-    </section>
-    <!-- custom-services end -->
-    <!-- custom-services-info start -->
-    <section class="custom-services-info py-5">
-      <div class="custom-container">
-        <div class="head-info">
-          <h2 class="main-text">السيرة الذاتية "CV"</h2>
-          <p class="par-text">السيرة الذاتيّة (CV) هي الجزء المكتوب عنك والذي يريد معرفتهُ الطرف الآخر (الشخص الذي سيُجري المقابلة معك) وتُكتب بشكل مختصر جداً (صفحة واحدة أو إثنتان كأقصى حد، باللغة الألمانية أو الإنجليزية) . وهي أيضاً وثيقة قيمة ومهمة جداً لأنها ستكون أول ما تُعبر به عن نفسك وربما تكون أداة الاتصال الوحيدة المباشرة مع الطرف الآخر (في هذه الحالة السفارة / القنصلية الألمانية أو موظف القبول في الشركة أو الأستاذ المشرف في الجامعة، الخ).</p>
-        </div>
-        <div class="advice-check pt-5">
-          <h5 class="advice-text">نصائح سريعة لكتابة CV فعّال</h5>
-          <div class="row   g-3">
-            <div class="col-6">
-              <p>✅️ استخدم تنسيق بسيط ومرتب</p>
-            </div>
-            <div class="col-6">
-              <p>✅ رتب المعلومات من الأحدث إلى الأقدم</p>
-            </div>
-            <div class="col-6">
-              <p>✅ اجعلها صفحة أو صفحتين بحد أقصى</p>
-            </div>
-            <div class="col-6">
-              <p>✅ ركز على ما يهم الجهة المستلمة</p>
-            </div>
-            <div class="col-6">
-              <p>✅تجنب الزخرفة أو الألوان الغير رسمية.</p>
-            </div>
-            <div class="col-6">
-              <p>✅رجع اللغة والإملاء جيداً .</p>
-            </div>
+    </div>
+  </section>
+  <!-- custom-services end -->
+  <!-- custom-services-info start -->
+  <section class="custom-services-info py-5">
+    <div class="custom-container">
+      <div class="head-info">
+        <h2 class="main-text">السيرة الذاتية "CV"</h2>
+        <p class="par-text">السيرة الذاتيّة (CV) هي الجزء المكتوب عنك والذي يريد معرفتهُ الطرف الآخر (الشخص الذي سيُجري
+          المقابلة معك) وتُكتب بشكل مختصر جداً (صفحة واحدة أو إثنتان كأقصى حد، باللغة الألمانية أو الإنجليزية) . وهي
+          أيضاً وثيقة قيمة ومهمة جداً لأنها ستكون أول ما تُعبر به عن نفسك وربما تكون أداة الاتصال الوحيدة المباشرة مع
+          الطرف الآخر (في هذه الحالة السفارة / القنصلية الألمانية أو موظف القبول في الشركة أو الأستاذ المشرف في الجامعة،
+          الخ).</p>
+      </div>
+      <div class="advice-check pt-5">
+        <h5 class="advice-text">نصائح سريعة لكتابة CV فعّال</h5>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <p>✅️ استخدم تنسيق بسيط ومرتب</p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <p>✅ رتب المعلومات من الأحدث إلى الأقدم</p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <p>✅ اجعلها صفحة أو صفحتين بحد أقصى</p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <p>✅ ركز على ما يهم الجهة المستلمة</p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <p>✅تجنب الزخرفة أو الألوان الغير رسمية.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <p>✅رجع اللغة والإملاء جيداً .</p>
           </div>
         </div>
-        <!-- Row 1: PDF example -->
-        <div class="py-5">
+      </div>
+      <!-- Row 1: PDF example -->
+      <div class="row mt-5">
+        <div class="col-lg-12 col-md-12 col-sm-12">
           <div class="download-card mb-3">
             <div class="download-row">
               <img src="../assets/img/education/Grouppdf.png" alt="" />
@@ -204,10 +216,13 @@
                 <div class="dl-title">السيرة الذاتية "CV"</div>
                 <div class="dl-sub">Example</div>
               </div>
-              <span class="leader" aria-hidden="true">................................................................................................................</span>
+              <span class="leader d-lg-block d-md-none d-sm-none"
+                aria-hidden="true">................................................................................................................</span>
               <a class="download-link" href="#" download>Download</a>
             </div>
           </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12">
           <div class="download-card mb-3">
             <div class="download-row">
               <img src="../assets/img/education/Groupword.png" alt="" />
@@ -215,26 +230,31 @@
                 <div class="dl-title">السيرة الذاتية "CV"</div>
                 <div class="dl-sub">Example</div>
               </div>
-              <span class="leader" aria-hidden="true">................................................................................................................</span>
+              <span class="leader d-lg-block d-md-none d-sm-none"
+                aria-hidden="true">................................................................................................................</span>
               <a class="download-link" href="#" download>Download</a>
             </div>
           </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12">
           <div class="download-card ">
             <div class="download-row">
-              <img src="/img/education/Groupword.png" alt="" />
+              <img src="../assets/img/education/Groupword.png" alt="" />
               <div class="dl-info">
                 <div class="dl-title">السيرة الذاتية "CV"</div>
                 <div class="dl-sub">Example</div>
               </div>
-              <span class="leader" aria-hidden="true">................................................................................................................</span>
+              <span class="leader d-lg-block d-md-none d-sm-none"
+                aria-hidden="true">................................................................................................................</span>
               <a class="download-link" href="#" download>Download</a>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- custom-services-info end -->
-    <!-- footer start -->
+    </div>
+  </section>
+  <!-- custom-services-info end -->
+  <!-- footer start -->
   <section class="consult-banner-section">
     <div class="container-fluid custom-container">
       <div class="consult-banner">

@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="../assets/css/all.min.css">
   <link rel="stylesheet" href="../assets/css/main.css">
   <link rel="stylesheet" href="../assets/css/style.css">
-  <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="css/edu-services.css">
   <link rel="stylesheet" href="../assets/css/header.css">
   <link rel="stylesheet" href="../assets/css/footer.css">
   <link rel="stylesheet" href="../assets/css/responsive.css">
@@ -54,6 +54,9 @@
         <a class="navbar-brand d-lg-none" href="index.html">
           <img src="../assets/img/logo.png" alt="شعار بيتهوفن سيتي" loading="lazy">
         </a>
+<a class="navbar-brand logo-scroll  " href="index.html">
+  <img src="../assets/img/logo.png" alt="logo">
+</a>
         <!-- Desktop Menu -->
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav gap-3">
@@ -88,22 +91,20 @@
           <div class="dropdown">
             <button class="btn lang-switch d-flex align-items-center justify-content-between" type="button"
               data-bs-toggle="dropdown" aria-expanded="false">
-              <div class="d-flex align-items-center gap-2">
-                <img src="../assets/img/home/global.svg" alt="Language" width="20" height="20">
+                <img src="../assets/img/home/global.svg" alt="Language">
                 <span>العربية</span>
-              </div>
-              <img src="../assets/img/home/arowwdown.svg" alt="فتح القائمة" width="12" height="12">
+              <img src="../assets/img/home/arowwdown.svg" alt="فتح القائمة">
             </button>
             <ul class="dropdown-menu dropdown-menu-end">
               <li>
                 <a class="dropdown-item d-flex align-items-center gap-2 active" href="index.html">
-                  <img src="../assets/img/global.svg" width="20" height="20" alt="">
+                  <img src="../assets/img/ar.svg" width="20" height="20" alt="">
                   العربية
                 </a>
               </li>
               <li>
                 <a class="dropdown-item d-flex align-items-center gap-2" href="index-en.html">
-                  <img src="assets/img/global.svg" width="20" height="20" alt="">
+                  <img src="../assets/img/en.svg" width="20" height="20" alt="">
                   English
                 </a>
               </li>
@@ -113,37 +114,42 @@
       </div>
     </nav>
     <!-- offcanvas -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-          القائمة
-        </h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="إغلاق القائمة">
-        </button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html">الرئيسية</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="aboutus.html">عن الشركة</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="education.html">التعليم العالي</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="job.html">التدريب المهني</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="guide.html">دليل بيتهوفن</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">تواصل معنا</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+  <div class="offcanvas-header d-flex align-items-center justify-content-between">
+    
+    <!-- اللوغو — على اليمين أول -->
+    <h5 class="offcanvas-title mb-0" id="offcanvasNavbarLabel">
+      <a href="index.html">
+        <img src="assets/img/logo.png" alt="شعار بيتهوفن سيتي" height="50">
+      </a>
+    </h5>
+
+    <!-- زر الإغلاق — على اليسار ثاني -->
+<button type="button" class="btn-close me-auto" data-bs-dismiss="offcanvas" aria-label="إغلاق القائمة"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="index.html">الرئيسية</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="aboutus.html">عن الشركة</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="education.html">التعليم العالي</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="job.html">التدريب المهني</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="guide.html">دليل بيتهوفن</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">تواصل معنا</a>
+      </li>
+    </ul>
+  </div>
+</div>
   </header>
   <!-- header end -->
       <!-- Breadcrumb start-->
@@ -181,27 +187,27 @@
 <p>✅️فتح حساب بنكي مغلق بإسم الطالب في إحدى البنوك الألمانية المخصصة لهذا الغرض لإيداع مبلغ مالي وقدره 10236 يورو وذلك قبل الوصول إلى ألمانيا وإثبات ذلك بوثيقة يتم إرفاقها مع طلب التأشيرة.</p>
 </div>
 <div class="advice-stars">
-         <h5 class="advice-text">الحساب البنكي المغلق</h5>
-  <ul class="star-list fs-6">
+    <h5 class="advice-text">الحساب البنكي المغلق</h5>
+  <ul class="star-list">
       <li>
-          <p>الحساب البنكي المُغلق هو حساب آمن (للإيداع / والضمان) لإثبات أن لديك ما يكفي من المال لتغطية تكاليف المعيشة
+          <p>                <img src="../assets/img/education/starList.svg" alt="" class="ms-2"/>الحساب البنكي المُغلق هو حساب آمن (للإيداع / والضمان) لإثبات أن لديك ما يكفي من المال لتغطية تكاليف المعيشة
 في ألمانيا.قبل السفر إلى ألمانيا، يتعين على الطالب إيداع مبلغ معين من المال يبلغ حوالي 10236 يورو في حساب بنكي بإسمه، ولا يمكنك سحب الأموال من هذا الحساب البنكي كما تريد أو بقدر ما تشاء، ولكن يمكنك شهريًا الحصول على مبلغ محدود من المال (حوالي 853 يورو) لتغطية تكاليف المعيشة الخاصة بك.</p>
      </li>
       <li>
-          <p>عند وصولِك إلى ألمانيا، يجب أن تقوم بفتح حساب بنكي غير مُغلق (حساب جاري Giro) في البنك الذي تراه مناسباَ لك، ليتم تحويل المبلغ الشهري الذي تحتاجه لمصروفاتك وهو حوالي 853 يورو شهرياً من حسابك البنكي المغلق إليهِ.</p>
+          <p>                <img src="../assets/img/education/starList.svg" alt="" class="ms-2"/>عند وصولِك إلى ألمانيا، يجب أن تقوم بفتح حساب بنكي غير مُغلق (حساب جاري Giro) في البنك الذي تراه مناسباَ لك، ليتم تحويل المبلغ الشهري الذي تحتاجه لمصروفاتك وهو حوالي 853 يورو شهرياً من حسابك البنكي المغلق إليهِ.</p>
     </li>
       <li>
-          <p>يُساعدك موظف البنك في الحصول على البطاقة البنكية EC وإرشادك حول كيفية إستخدام الخدمات المصرفية عبر الإنترنت وكذلك كيفية إستخدام أجهزة الصراف الآلي.</p>
+          <p>                <img src="../assets/img/education/starList.svg" alt="" class="ms-2"/>يُساعدك موظف البنك في الحصول على البطاقة البنكية EC وإرشادك حول كيفية إستخدام الخدمات المصرفية عبر الإنترنت وكذلك كيفية إستخدام أجهزة الصراف الآلي.</p>
 </li>
       <li>
-          <p>الهدف من الحساب المغلق هو تأمين تكاليف المعيشة للطالب دون الاعتماد على الدولة.</p></li>
+          <p>                <img src="../assets/img/education/starList.svg" alt="" class="ms-2"/>الهدف من الحساب المغلق هو تأمين تكاليف المعيشة للطالب دون الاعتماد على الدولة.</p></li>
       <li>
-    <p>يمنحك وقتًا للتركيز على الدراسة وتعلم اللغة دون القلق من البحث عن عمل لتغطية نفقاتك.</p> </li>
+    <p>                <img src="../assets/img/education/starList.svg" alt="" class="ms-2"/>يمنحك وقتًا للتركيز على الدراسة وتعلم اللغة دون القلق من البحث عن عمل لتغطية نفقاتك.</p> </li>
   </ul>
 </div>
 </div>
 <div class="py-5">
-    <div class="container">
+    <div class="custom-container">
         <div class="link active">
     <p class="text-center">إحجز التأمين الصحي الخاص بإقامة التعليم في ألمانيا وأوروبا من خلال شركة- Dr.WALTER</p>
 </div>

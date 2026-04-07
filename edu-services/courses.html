@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="../assets/css/all.min.css">
   <link rel="stylesheet" href="../assets/css/main.css">
   <link rel="stylesheet" href="../assets/css/style.css">
-  <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="css/edu-services.css">
   <link rel="stylesheet" href="../assets/css/header.css">
   <link rel="stylesheet" href="../assets/css/footer.css">
   <link rel="stylesheet" href="../assets/css/responsive.css">
@@ -54,6 +54,9 @@
         <a class="navbar-brand d-lg-none" href="index.html">
           <img src="../assets/img/logo.png" alt="شعار بيتهوفن سيتي" loading="lazy">
         </a>
+<a class="navbar-brand logo-scroll  " href="index.html">
+  <img src="../assets/img/logo.png" alt="logo">
+</a>
         <!-- Desktop Menu -->
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav gap-3">
@@ -88,22 +91,20 @@
           <div class="dropdown">
             <button class="btn lang-switch d-flex align-items-center justify-content-between" type="button"
               data-bs-toggle="dropdown" aria-expanded="false">
-              <div class="d-flex align-items-center gap-2">
-                <img src="../assets/img/home/global.svg" alt="Language" width="20" height="20">
+                <img src="../assets/img/home/global.svg" alt="Language">
                 <span>العربية</span>
-              </div>
-              <img src="../assets/img/home/arowwdown.svg" alt="فتح القائمة" width="12" height="12">
+              <img src="../assets/img/home/arowwdown.svg" alt="فتح القائمة">
             </button>
             <ul class="dropdown-menu dropdown-menu-end">
               <li>
                 <a class="dropdown-item d-flex align-items-center gap-2 active" href="index.html">
-                  <img src="../assets/img/global.svg" width="20" height="20" alt="">
+                  <img src="../assets/img/ar.svg" width="20" height="20" alt="">
                   العربية
                 </a>
               </li>
               <li>
                 <a class="dropdown-item d-flex align-items-center gap-2" href="index-en.html">
-                  <img src="assets/img/global.svg" width="20" height="20" alt="">
+                  <img src="../assets/img/en.svg" width="20" height="20" alt="">
                   English
                 </a>
               </li>
@@ -113,93 +114,109 @@
       </div>
     </nav>
     <!-- offcanvas -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-          القائمة
-        </h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="إغلاق القائمة">
-        </button>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+  <div class="offcanvas-header d-flex align-items-center justify-content-between">
+    
+    <!-- اللوغو — على اليمين أول -->
+    <h5 class="offcanvas-title mb-0" id="offcanvasNavbarLabel">
+      <a href="index.html">
+        <img src="assets/img/logo.png" alt="شعار بيتهوفن سيتي" height="50">
+      </a>
+    </h5>
+
+    <!-- زر الإغلاق — على اليسار ثاني -->
+<button type="button" class="btn-close me-auto" data-bs-dismiss="offcanvas" aria-label="إغلاق القائمة"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="index.html">الرئيسية</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="aboutus.html">عن الشركة</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="education.html">التعليم العالي</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="job.html">التدريب المهني</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="guide.html">دليل بيتهوفن</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">تواصل معنا</a>
+      </li>
+    </ul>
+  </div>
+</div>
+  </header>
+  <!-- header end -->
+  <!-- Breadcrumb start-->
+  <div class="custom-container pt-5">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb justify-content-start">
+        <li class="breadcrumb-item"><a href="#">الرئيسية</a></li>
+        <li class="breadcrumb-item"><a href="#">التعليم العالي</a></li>
+        <li class="breadcrumb-item"> <a href="#">الدورة التحضيرية لشهادات اللغة الألمانية</a></li>
+      </ol>
+    </nav>
+  </div>
+  <!-- Breadcrumb end-->
+  <!-- custom-services start -->
+  <section class="custom-services py-5">
+    <div class="custom-container ">
+      <div class="coverLetter-hero custom-hero"
+        style="background-image: url('../assets/img/education/servicesimg12.png');">
       </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html">الرئيسية</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="aboutus.html">عن الشركة</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="education.html">التعليم العالي</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="job.html">التدريب المهني</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="guide.html">دليل بيتهوفن</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">تواصل معنا</a>
-          </li>
+    </div>
+  </section>
+  <!-- custom-services end -->
+  <!-- custom-services-info start -->
+  <section class="custom-services-info py-5">
+    <div class="custom-container">
+      <div class="head-info">
+        <h2 class="main-text">
+          الدورات التحضيرية لشهادات اللغة الألمانية
+        </h2>
+        <p class="par-text">هي دورات مكثفة تقدم من قبل جامعات حكومية أو معاهد خاصة، تعد الطالب لإجتياز إحدى شهادات اللغة
+          المعترف بها مثل :DSH "امتحان اللغة الألمانية للقبول الجامعي"، TestDaf "امتحان اللغة الألمانية كلغة أجنبية"،
+          Goethe C2 أو غيرها من الشهادات.. مدة الدورة عادة فصل إلى فصلين دراسيين حسب مستوى الطالب.
+        </p>
+      </div>
+      <div class="advice-check py-5">
+        <h5 class="advice-text">أهداف الدورة التحضيرية</h5>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <p>✅ تجهيز الطالب لغوياً لفهم المواد الجامعية باللغة الألمانية</p>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <p>✅ تأهيله لاجتياز اختبار اللغة المطلوب للتخصص أو الجامعة</p>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <p>✅تطوير المهارات اللغوية الأكاديمية اللازمة للنجاح.</p>
+          </div>
+        </div>
+      </div>
+      <p class="red-text">لا يوجد اختبار قبول مباشر، لكن يجب إثبات الكفاءة في اللغة بمستوى لا يقل عن B1 أو B2 للتسجيل في
+        الدورة.</p>
+      <div class="advice-list py-5">
+        <h5 class="advice-text">اماكن الالتحاق والتكلفة</h5>
+        <ul>
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <li><span>جامعات حكومية:</span> رسوم رمزية(150-350€) للفصل او احياناً مجاناً.</li>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <li><span>مدارس خاصة:</span> تكلفة شهرية حوالي 400€</li>
+            </div>
+          </div>
         </ul>
       </div>
     </div>
-  </header>
-  <!-- header end -->
-      <!-- Breadcrumb start-->
-    <div class="custom-container pt-5">
-    <nav aria-label="breadcrumb">
-     <ol class="breadcrumb justify-content-start">
-         <li class="breadcrumb-item"><a href="#">الرئيسية</a></li>
-         <li class="breadcrumb-item"><a href="#">التعليم العالي</a></li>
-         <li class="breadcrumb-item"> <a href="#">الدورة التحضيرية لشهادات اللغة الألمانية</a></li>
-     </ol>
- </nav>
-    </div>
-    <!-- Breadcrumb end-->
-    <!-- custom-services start -->
-    <section class="custom-services py-5">
-        <div class="custom-container ">
-            <div class="coverLetter-hero custom-hero" style="background-image: url('../assets/img/education/servicesimg12.png');" >
-            </div>
-        </div>
-    </section>
-    <!-- custom-services end -->
-        <!-- custom-services-info start -->
-    <section class="custom-services-info py-5">
-        <div class="custom-container">
-            <div class="head-info">
-                <h2 class="main-text">
-                    الدورات التحضيرية لشهادات اللغة الألمانية
-                    </h2>
-                <p class="par-text">هي دورات مكثفة تقدم من قبل جامعات حكومية أو معاهد خاصة، تعد الطالب لإجتياز إحدى شهادات اللغة المعترف بها  مثل :DSH "امتحان اللغة الألمانية للقبول الجامعي"، TestDaf "امتحان اللغة الألمانية كلغة أجنبية"، Goethe C2 أو غيرها من الشهادات.. مدة الدورة عادة فصل إلى فصلين دراسيين حسب مستوى الطالب.
-                </p></div>
-            <div class="advice-check mt-5">
-                <h5 class="advice-text">أهداف الدورة التحضيرية</h5>
-                <div class="row g-2">
-                    <div class="col-6">
-                        <p class="">✅ تجهيز الطالب لغوياً لفهم المواد الجامعية باللغة الألمانية</p>
-                    </div>
-                    <div class="col-6">
-                        <p class="">✅ تأهيله لاجتياز اختبار اللغة المطلوب للتخصص أو الجامعة</p>
-                    </div>
-                    <div class="col">
-                        <p class="">✅تطوير المهارات اللغوية الأكاديمية اللازمة للنجاح.</p>
-                    </div>
-                </div>
-            </div>
-            <p class="red-text">لا يوجد اختبار قبول مباشر، لكن يجب إثبات الكفاءة في اللغة بمستوى لا يقل عن B1 أو B2 للتسجيل في الدورة.</p>
-<div class="advice-list py-5">
-    <h5 class="advice-text">اماكن الالتحاق والتكلفة</h5>
-    <ul class="d-flex mt-3">
-        <li><span>جامعات حكومية:</span> رسوم رمزية(150-350€) للفصل او احياناً مجاناً.</li>
-        <li><span>مدارس خاصة:</span> تكلفة شهرية حوالي 400€</li>
-    </ul>
-</div>
-        </div>
-    </section>
-    <!-- custom-services-info end -->
-    <!-- footer start -->
+  </section>
+  <!-- custom-services-info end -->
+  <!-- footer start -->
   <section class="consult-banner-section">
     <div class="container-fluid custom-container">
       <div class="consult-banner">

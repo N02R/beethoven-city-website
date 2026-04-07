@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+ <link rel="stylesheet" href="assets/css/bootstrap.min.css"> 
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">-->
   <link rel="stylesheet" href="assets/css/all.min.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -53,6 +53,9 @@
         <a class="navbar-brand d-lg-none" href="index.html">
           <img src="assets/img/logo.png" alt="شعار بيتهوفن سيتي" loading="lazy">
         </a>
+<a class="navbar-brand logo-scroll  " href="index.html">
+  <img src="assets/img/logo.png" alt="logo">
+</a>
         <!-- Desktop Menu -->
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav gap-3">
@@ -94,13 +97,13 @@
             <ul class="dropdown-menu dropdown-menu-end">
               <li>
                 <a class="dropdown-item d-flex align-items-center gap-2 active" href="index.html">
-                  <img src="assets/img/global.svg" width="20" height="20" alt="">
+                  <img src="assets/img/ar.svg" width="20" height="20" alt="">
                   العربية
                 </a>
               </li>
               <li>
                 <a class="dropdown-item d-flex align-items-center gap-2" href="index-en.html">
-                  <img src="assets/img/global.svg" width="20" height="20" alt="">
+                  <img src="assets/img/en.svg" width="20" height="20" alt="">
                   English
                 </a>
               </li>
@@ -169,22 +172,26 @@
       <h2 class="mb-5 sec-title">خدماتنا المميزة</h2>
       <div class="row g-4">
         <div class="col-lg-6 col-md-6 col-sm-12">
-          <a href="#" class="card-link text-decoration-none">
+          <a href="education.html" class="card-link text-decoration-none">
             <div class="card" style="background: url('assets/img/home/education.jpg') no-repeat center/cover;">
+              <a href="education.html">
               <div class="card-info">
                 <h3>التعليم العالي والجامعي</h3>
                 <img src="assets/img/home/Arrow.svg" alt="Arrow">
               </div>
+              </a>
             </div>
           </a>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12">
-          <a href="#" class="card-link text-decoration-none">
+          <a href="job.html" class="card-link text-decoration-none">
             <div class="card" style="background: url('assets/img/home/traning.jpg') no-repeat center/cover;">
-              <div class="card-info">
+              <a href="job.html">
+                              <div class="card-info">
                 <h3>التأهيل المهني والعملي</h3>
                 <img src="assets/img/home/Arrow.svg" alt="Arrow">
               </div>
+              </a>
             </div>
           </a>
         </div>
@@ -250,7 +257,7 @@
   <div class="custom-container">
     <div class="reviews-carousel-wrapper">
       <div id="carousel-reviews"
-           class="carousel slide "
+           class="carousel slide"
            data-bs-ride="carousel"
            data-bs-interval="false"
            dir="rtl">
@@ -259,49 +266,37 @@
           <div class="carousel-item active">
             <div class="video-wrapper">
               <div class="video-container">
-                <iframe src="" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/tu51jzzZO9Q?si=12WzAl2S_7VIR0GC" allowfullscreen></iframe>
               </div>
-              <img src="assets/img/home/play.png"
-                   alt="تشغيل" class="play">
             </div>
           </div>
           <div class="carousel-item">
             <div class="video-wrapper">
               <div class="video-container">
-                <iframe src="" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/xcgM1t5H6dU?si=7xKFttEK2kLpMODI" allowfullscreen></iframe>
               </div>
-              <img src="assets/img/home/play.png"
-                   alt="تشغيل" class="play">
             </div>
           </div>
           <div class="carousel-item">
             <div class="video-wrapper">
               <div class="video-container">
-                <iframe src="" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/jpaOEC2pVRc?si=XjB-kB9KnTuduh73" allowfullscreen></iframe>
               </div>
-              <img src="assets/img/home/play.png"
-                   alt="تشغيل" class="play">
             </div>
           </div>
         </div>
 
         <div class="dots mt-4">
-          <span class="dot active"
-                data-bs-target="#carousel-reviews"
-                data-bs-slide-to="0"></span>
-          <span class="dot"
-                data-bs-target="#carousel-reviews"
-                data-bs-slide-to="1"></span>
-          <span class="dot"
-                data-bs-target="#carousel-reviews"
-                data-bs-slide-to="2"></span>
+          <span class="dot active" data-bs-target="#carousel-reviews" data-bs-slide-to="0"></span>
+          <span class="dot" data-bs-target="#carousel-reviews" data-bs-slide-to="1"></span>
+          <span class="dot" data-bs-target="#carousel-reviews" data-bs-slide-to="2"></span>
         </div>
       </div>
     </div>
   </div>
 </section>
 <!-- review end -->
-  <!-- guide start -->
+
    <!-- guide start -->
 <section class="guide py-2">
   <div class="custom-container">
@@ -558,8 +553,8 @@
     </div>
   </footer>
   <!-- footer end  -->
-  <!-- <script src="assets/js/bootstrap.bundle.min.js"></script> -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>-->
   <script src="assets/js/all.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>

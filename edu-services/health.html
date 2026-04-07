@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="../assets/css/all.min.css">
   <link rel="stylesheet" href="../assets/css/main.css">
   <link rel="stylesheet" href="../assets/css/style.css">
-  <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="css/edu-services.css">
   <link rel="stylesheet" href="../assets/css/header.css">
   <link rel="stylesheet" href="../assets/css/footer.css">
   <link rel="stylesheet" href="../assets/css/responsive.css">
@@ -54,6 +54,9 @@
         <a class="navbar-brand d-lg-none" href="index.html">
           <img src="../assets/img/logo.png" alt="شعار بيتهوفن سيتي" loading="lazy">
         </a>
+<a class="navbar-brand logo-scroll  " href="index.html">
+  <img src="../assets/img/logo.png" alt="logo">
+</a>
         <!-- Desktop Menu -->
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav gap-3">
@@ -88,22 +91,20 @@
           <div class="dropdown">
             <button class="btn lang-switch d-flex align-items-center justify-content-between" type="button"
               data-bs-toggle="dropdown" aria-expanded="false">
-              <div class="d-flex align-items-center gap-2">
-                <img src="../assets/img/home/global.svg" alt="Language" width="20" height="20">
+                <img src="../assets/img/home/global.svg" alt="Language">
                 <span>العربية</span>
-              </div>
-              <img src="../assets/img/home/arowwdown.svg" alt="فتح القائمة" width="12" height="12">
+              <img src="../assets/img/home/arowwdown.svg" alt="فتح القائمة">
             </button>
             <ul class="dropdown-menu dropdown-menu-end">
               <li>
                 <a class="dropdown-item d-flex align-items-center gap-2 active" href="index.html">
-                  <img src="../assets/img/global.svg" width="20" height="20" alt="">
+                  <img src="../assets/img/ar.svg" width="20" height="20" alt="">
                   العربية
                 </a>
               </li>
               <li>
                 <a class="dropdown-item d-flex align-items-center gap-2" href="index-en.html">
-                  <img src="assets/img/global.svg" width="20" height="20" alt="">
+                  <img src="../assets/img/en.svg" width="20" height="20" alt="">
                   English
                 </a>
               </li>
@@ -113,41 +114,46 @@
       </div>
     </nav>
     <!-- offcanvas -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-          القائمة
-        </h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="إغلاق القائمة">
-        </button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html">الرئيسية</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="aboutus.html">عن الشركة</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="education.html">التعليم العالي</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="job.html">التدريب المهني</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="guide.html">دليل بيتهوفن</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">تواصل معنا</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+  <div class="offcanvas-header d-flex align-items-center justify-content-between">
+    
+    <!-- اللوغو — على اليمين أول -->
+    <h5 class="offcanvas-title mb-0" id="offcanvasNavbarLabel">
+      <a href="index.html">
+        <img src="assets/img/logo.png" alt="شعار بيتهوفن سيتي" height="50">
+      </a>
+    </h5>
+
+    <!-- زر الإغلاق — على اليسار ثاني -->
+<button type="button" class="btn-close me-auto" data-bs-dismiss="offcanvas" aria-label="إغلاق القائمة"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="index.html">الرئيسية</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="aboutus.html">عن الشركة</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="education.html">التعليم العالي</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="job.html">التدريب المهني</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="guide.html">دليل بيتهوفن</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">تواصل معنا</a>
+      </li>
+    </ul>
+  </div>
+</div>
   </header>
-  <!-- header end --> 
+  <!-- header end -->
       <!-- Breadcrumb start-->
-    <div class="container pt-5">
+    <div class="custom-container pt-5">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb justify-content-start">
           <li class="breadcrumb-item"><a href="#">الرئيسية</a></li>
@@ -159,7 +165,7 @@
     <!-- Breadcrumb end-->
     <!-- custom-services start -->
     <section class="custom-services py-5">
-      <div class="container ">
+      <div class="custom-container ">
         <div class="health-hero custom-hero" style="background-image: url('../assets/img/education/servicesimg6.png');">
         </div>
       </div>
@@ -175,49 +181,47 @@
         <div class="advice-check">
           <h5 class="advice-text mb-4">لماذا التأمين الصحي مهم؟</h5>
           <div class="row">
-            <div class="col-6">
+            <div class="col-lg-6 col-md-6 col-sm-12">
               <p>✅️شرط أساسي لقبول تأشيرة الدراسة أو التدريب.</p>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6 col-md-6 col-sm-12">
               <p>✅️يحميك من تكاليف العلاج المرتفعة.</p>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6 col-md-6 col-sm-12">
               <p>✅️مطلوب عند التسجيل في الجامعة.</p>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6 col-md-6 col-sm-12">
               <p>✅️للتسجيل الرسمي لدى التأمين العام (Barmer, AOK, TK...)</p>
             </div>
           </div>
         </div>
         <div class="advice-stars my-5">
           <h5 class="advice-text mb-4">الوثائق المكملة</h5>
-          <div class="row g-0">
-            <div class="col-4">
-              <div class="item">
-                <img src="../assets/img/education/starList.svg" alt="" />
-                <p class="">قبول جامعي أو من معهد اللغة.</p>
-              </div>
-            </div>
-            <div class="col">
-              <div class="item">
-                <img src="../assets/img/education/starList.svg" alt="" />
-                <p class="">صورة جواز السفر</p>
-              </div>
-              
-            </div>
-            <div class="col">
-              <div class="item">
-                <img src="../assets/img/education/starList.svg" alt="" />
-                <p class="">بيانات الوصول.</p>
-              </div>
-            </div>
-            <div class="col">
-              <div class="item">
-                <img src="../assets/img/education/starList.svg" alt="" />
-                <p class="">إثبات الدفع.</p>
-              </div>
-            </div>
-          </div>
+          <ul class="star-list">
+            <div class="row">
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <li>
+      <p><img src="../assets/img/education/starList.svg" alt="" class="ms-2" />قبول جامعي أو من معهد اللغة.</p>
+    </li>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <li>
+      <p> <img src="../assets/img/education/starList.svg" alt="" class="ms-2" />صورة جواز السفر </p>
+    </li>
+    
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <li>
+      <p> <img src="../assets/img/education/starList.svg" alt="" class="ms-2" />بيانات الوصول.</p>
+    </li>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <li>
+      <p><img src="../assets/img/education/starList.svg" alt="" class="ms-2" />إثبات الدفع.</p>
+    </li>
+  </div>
+</div>
+          </ul>
         </div>
         <p class="advice-text mt-4">نحن نتعامل مع أحد الخبراء الألمان البارزين في تلبية خدمات التأمين الصحي للزوار الأجانب في ألمانيا والذين تتجاوز خبرتهم أكثر من 60 عامًا في هذا المجال.. يمكنك مباشرة أن تختار وتحجز تأمينك الصحي المناسب من خلال أحد الروابط التالية:</p>
         <div class="link active">

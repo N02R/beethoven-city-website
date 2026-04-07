@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="../assets/css/all.min.css">
   <link rel="stylesheet" href="../assets/css/main.css">
   <link rel="stylesheet" href="../assets/css/style.css">
-  <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="css/edu-services.css">
   <link rel="stylesheet" href="../assets/css/header.css">
   <link rel="stylesheet" href="../assets/css/footer.css">
   <link rel="stylesheet" href="../assets/css/responsive.css">
@@ -54,11 +54,14 @@
         <a class="navbar-brand d-lg-none" href="index.html">
           <img src="../assets/img/logo.png" alt="شعار بيتهوفن سيتي" loading="lazy">
         </a>
+<a class="navbar-brand logo-scroll  " href="index.html">
+  <img src="../assets/img/logo.png" alt="logo">
+</a>
         <!-- Desktop Menu -->
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav gap-3">
             <li class="nav-item">
-              <a class="nav-link active" href="../index.html">الرئيسية</a>
+              <a class="nav-link active" href="index.html">الرئيسية</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="aboutus.html">عن الشركة</a>
@@ -88,22 +91,20 @@
           <div class="dropdown">
             <button class="btn lang-switch d-flex align-items-center justify-content-between" type="button"
               data-bs-toggle="dropdown" aria-expanded="false">
-              <div class="d-flex align-items-center gap-2">
-                <img src="../assets/img/home/global.svg" alt="Language" width="20" height="20">
+                <img src="../assets/img/home/global.svg" alt="Language">
                 <span>العربية</span>
-              </div>
-              <img src="../assets/img/home/arowwdown.svg" alt="فتح القائمة" width="12" height="12">
+              <img src="../assets/img/home/arowwdown.svg" alt="فتح القائمة">
             </button>
             <ul class="dropdown-menu dropdown-menu-end">
               <li>
                 <a class="dropdown-item d-flex align-items-center gap-2 active" href="index.html">
-                  <img src="../assets/img/global.svg" width="20" height="20" alt="">
+                  <img src="../assets/img/ar.svg" width="20" height="20" alt="">
                   العربية
                 </a>
               </li>
               <li>
                 <a class="dropdown-item d-flex align-items-center gap-2" href="index-en.html">
-                  <img src="assets/img/global.svg" width="20" height="20" alt="">
+                  <img src="../assets/img/en.svg" width="20" height="20" alt="">
                   English
                 </a>
               </li>
@@ -113,159 +114,174 @@
       </div>
     </nav>
     <!-- offcanvas -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-          القائمة
-        </h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="إغلاق القائمة">
-        </button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html">الرئيسية</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="aboutus.html">عن الشركة</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="education.html">التعليم العالي</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="job.html">التدريب المهني</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="guide.html">دليل بيتهوفن</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">تواصل معنا</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+  <div class="offcanvas-header d-flex align-items-center justify-content-between">
+    
+    <!-- اللوغو — على اليمين أول -->
+    <h5 class="offcanvas-title mb-0" id="offcanvasNavbarLabel">
+      <a href="index.html">
+        <img src="assets/img/logo.png" alt="شعار بيتهوفن سيتي" height="50">
+      </a>
+    </h5>
+
+    <!-- زر الإغلاق — على اليسار ثاني -->
+<button type="button" class="btn-close me-auto" data-bs-dismiss="offcanvas" aria-label="إغلاق القائمة"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="index.html">الرئيسية</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="aboutus.html">عن الشركة</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="education.html">التعليم العالي</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="job.html">التدريب المهني</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="guide.html">دليل بيتهوفن</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">تواصل معنا</a>
+      </li>
+    </ul>
+  </div>
+</div>
   </header>
   <!-- header end -->
-      <!-- Breadcrumb start-->
-    <div class="custom-container pt-5">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb justify-content-start">
-          <li class="breadcrumb-item"><a href="#">الرئيسية</a></li>
-          <li class="breadcrumb-item"><a href="#">التعليم العالي</a></li>
-          <li class="breadcrumb-item"> <a href="#">خطاب الطلب</a></li>
-        </ol>
-      </nav>
+  <!-- Breadcrumb start-->
+  <div class="custom-container pt-5">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb justify-content-start">
+        <li class="breadcrumb-item"><a href="#">الرئيسية</a></li>
+        <li class="breadcrumb-item"><a href="#">التعليم العالي</a></li>
+        <li class="breadcrumb-item"> <a href="#">خطاب الطلب</a></li>
+      </ol>
+    </nav>
+  </div>
+  <!-- Breadcrumb end-->
+  <!-- custom-services start -->
+  <section class="custom-services py-5">
+    <div class="custom-container ">
+      <div class="coverLetter-hero custom-hero"
+        style="background-image: url('../assets/img/education/servicesimg1.jpg'); background-position: center -30px;">
+      </div>
     </div>
-    <!-- Breadcrumb end-->
-    <!-- custom-services start -->
-    <section class="custom-services py-5">
-      <div class="custom-container ">
-        <div class="coverLetter-hero custom-hero" style="background-image: url('../assets/img/education/servicesimg1.jpg'); background-position: center -30px;">
-        </div>
+  </section>
+  <!-- custom-services end -->
+  <!-- custom-services-info start -->
+  <section class="custom-services-info py-5">
+    <div class="custom-container">
+      <div class="head-info">
+        <h2 class="main-text">
+          رسالة تعريف/خطاب طلب احترافي يدعم طلبك، أياً كان هدفك أو وجهتك
+        </h2>
+        <p class="par-text">رسالة التعريف أو ما يعرف "Cover Letter" هي مستند موجز من صفحة واحدة يوضح فيها مقدم الطلب
+          (بغض النظر عن نوع التأشيرة: طالب، تعلم لغة، تدريب، عمل، علاج، أو غيرها) هدفه التوجه إلى ألمانيا مع توضيح بعض
+          التفاصيل الأساسية. كما تتضمن الرسالة قائمة منظمة بجميع الوثائق المرفقة مع الكلب، مما يعزز فرص قبول طلبك بشكل
+          احترافي وواضح.
+        </p>
       </div>
-    </section>
-    <!-- custom-services end -->
-    <!-- custom-services-info start -->
-    <section class="custom-services-info py-5">
-      <div class="container">
-        <div class="head-info">
-          <h2 class="main-text">
-            رسالة تعريف/خطاب طلب احترافي يدعم طلبك، أياً كان هدفك أو وجهتك
-          </h2>
-          <p class="par-text">رسالة التعريف أو ما يعرف "Cover Letter" هي مستند موجز من صفحة واحدة يوضح فيها مقدم الطلب (بغض النظر عن نوع التأشيرة: طالب، تعلم لغة، تدريب، عمل، علاج، أو غيرها) هدفه التوجه إلى ألمانيا مع توضيح بعض التفاصيل الأساسية. كما تتضمن الرسالة قائمة منظمة بجميع الوثائق المرفقة مع الكلب، مما يعزز فرص قبول طلبك بشكل احترافي وواضح.
-          </p>
-        </div>
-        <div class="advice-stars py-5">
-          <h5 class="advice-text">النقاط التي يجب مراعاتها عند كتابة رسالة التعريف</h5>
-          <div class="row g-3">
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <div class="item">
-                <img src="../assets/img/education/starList.svg" class="" />
-                <p>المعلومات الشخصية الأساسية.</p>
-              </div>
+      <div class="advice-stars my-5">
+        <h5 class="advice-text">النقاط التي يجب مراعاتها عند كتابة رسالة التعريف</h5>
+        <ul class="star-list mt-4">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6">
+              <li>
+                <p><img src="../assets/img/education/starList.svg" class="ms-2" />المعلومات الشخصية الأساسية.</p>
+              </li>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <div class="item">
-                <img src="../assets/img/education/starList.svg" alt="" />
-                <p>معلومات عن التعليم الخاص بك.</p>
-              </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+              <li>
+                <p><img src="../assets/img/education/starList.svg" alt="" class="ms-2" />معلومات عن التعليم الخاص بك.
+                </p>
+              </li>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <div class="item">
-                <img src="../assets/img/education/starList.svg" alt="" />
-                <p>الهدف من زيارتك إلى ألمانيا.</p>
-                
-              </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+              <li>
+                <p><img src="../assets/img/education/starList.svg" alt="" class="ms-2" />الهدف من زيارتك إلى ألمانيا.
+                </p>
+              </li>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <div class="item">
-                <img src="../assets/img/education/starList.svg" alt="" />
-                <p>الوضع المالي ونوع الدعم المالي.</p>
-              </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+              <li>
+                <p><img src="../assets/img/education/starList.svg" alt="" class="ms-2" />الوضع المالي ونوع الدعم المالي.
+                </p>
+              </li>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <div class="item">
-                <img src="../assets/img/education/starList.svg" alt="" />
-                <p>سبب اختيارك للتخصص والجامعة.</p>
-              </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+              <li>
+                <p><img src="../assets/img/education/starList.svg" alt="" class="ms-2" />سبب اختيارك للتخصص والجامعة.
+                </p>
+              </li>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <div class="item">
-                <img src="../assets/img/education/starList.svg" alt="" />
-                <p>الوثائق المرفقة مع التأشيرة.</p>
-              </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+              <li>
+                <p><img src="../assets/img/education/starList.svg" alt="" class="ms-2" />الوثائق المرفقة مع التأشيرة.
+                </p>
+              </li>
             </div>
           </div>
-        </div>
-        <div class="advice-check">
-          <h5 class="note-text">ملاحظات هامة !!</h5>
-          <div class="row g-3 row-custom">
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <p>✅ اكتب الخطاب بأسلوب رسمي وواضح.</p>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <p>✅ راجع الأخطاء اللغوية قبل الإرسال.</p>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <p>✅ لا تكرر معلومات السيرة الذاتية.</p>
-            </div>
-            <div class="col-lg-5 col-md-6 col-sm-12">
-              <p>✅ استخدم الألمانية أو الإنجليزية حسب الحاجة.</p>
-            </div>
-            <div class="col-lg col-md-6 col-sm-12">
-              <p class="mr-4">✅ تواصل معنا لمساعدتك في مراجعة خطابك.</p>
-            </div>
+        </ul>
+      </div>
+      <div class="advice-check py-5">
+        <h5 class="note-text">ملاحظات هامة !!</h5>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <p>✅ اكتب الخطاب بأسلوب رسمي وواضح.</p>
           </div>
-        </div>
-        <!-- Row 1: PDF example -->
-        <div class="py-5">
-          <div class="download-card mb-3">
-            <div class="download-row">
-              <img src="../assets/img/education/Grouppdf.png" alt="" />
-              <div class="dl-info">
-                <div class="dl-title">رسالة التعريف/ خطاب الطلب</div>
-                <div class="dl-sub">Example</div>
-              </div>
-              <span class="leader" aria-hidden="true">................................................................................................................</span>
-              <a class="download-link" href="#" download>Download</a>
-            </div>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <p>✅ راجع الأخطاء اللغوية قبل الإرسال.</p>
           </div>
-          <div class="download-card ">
-            <div class="download-row">
-              <img src="../assets/img/education/Groupword.png" alt="" />
-              <div class="dl-info">
-                <div class="dl-title">رسالة التعريف/ خطاب الطلب</div>
-                <div class="dl-sub">Example</div>
-              </div>
-              <span class="leader" aria-hidden="true">................................................................................................................</span>
-              <a class="download-link" href="#" download>Download</a>
-            </div>
+          <div class="col-lg-4 col-md-6 col-sm-5">
+            <p>✅ لا تكرر معلومات السيرة الذاتية.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-7">
+            <p>✅ استخدم الألمانية أو الإنجليزية حسب الحاجة.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <p>✅ تواصل معنا لمساعدتك في مراجعة خطابك.</p>
           </div>
         </div>
       </div>
-    </section>
-    <!-- custom-services-info end -->
-    <!-- footer start -->
+      <!-- Row 1: PDF example -->
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="download-card mb-3">
+          <div class="download-row">
+            <img src="../assets/img/education/Grouppdf.png" alt="" />
+            <div class="dl-info">
+              <div class="dl-title">رسالة التعريف/ خطاب الطلب</div>
+              <div class="dl-sub">Example</div>
+            </div>
+            <span class="leader d-lg-block d-md-none d-sm-none"
+              aria-hidden="true">................................................................................................................</span>
+            <a class="download-link" href="#" download>Download</a>
+          </div>
+        </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="download-card ">
+          <div class="download-row">
+            <img src="../assets/img/education/Groupword.png" alt="" />
+            <div class="dl-info">
+              <div class="dl-title">رسالة التعريف/ خطاب الطلب</div>
+              <div class="dl-sub">Example</div>
+            </div>
+            <span class="leader d-lg-block d-md-none d-sm-none"
+              aria-hidden="true">................................................................................................................</span>
+            <a class="download-link" href="#" download>Download</a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- custom-services-info end -->
+  <!-- footer start -->
   <section class="consult-banner-section">
     <div class="container-fluid custom-container">
       <div class="consult-banner">

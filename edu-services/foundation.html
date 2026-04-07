@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="../assets/css/all.min.css">
   <link rel="stylesheet" href="../assets/css/main.css">
   <link rel="stylesheet" href="../assets/css/style.css">
-  <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="css/edu-services.css">
   <link rel="stylesheet" href="../assets/css/header.css">
   <link rel="stylesheet" href="../assets/css/footer.css">
   <link rel="stylesheet" href="../assets/css/responsive.css">
@@ -54,6 +54,9 @@
         <a class="navbar-brand d-lg-none" href="index.html">
           <img src="../assets/img/logo.png" alt="شعار بيتهوفن سيتي" loading="lazy">
         </a>
+<a class="navbar-brand logo-scroll  " href="index.html">
+  <img src="../assets/img/logo.png" alt="logo">
+</a>
         <!-- Desktop Menu -->
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav gap-3">
@@ -88,22 +91,20 @@
           <div class="dropdown">
             <button class="btn lang-switch d-flex align-items-center justify-content-between" type="button"
               data-bs-toggle="dropdown" aria-expanded="false">
-              <div class="d-flex align-items-center gap-2">
-                <img src="../assets/img/home/global.svg" alt="Language" width="20" height="20">
+                <img src="../assets/img/home/global.svg" alt="Language">
                 <span>العربية</span>
-              </div>
-              <img src="../assets/img/home/arowwdown.svg" alt="فتح القائمة" width="12" height="12">
+              <img src="../assets/img/home/arowwdown.svg" alt="فتح القائمة">
             </button>
             <ul class="dropdown-menu dropdown-menu-end">
               <li>
                 <a class="dropdown-item d-flex align-items-center gap-2 active" href="index.html">
-                  <img src="../assets/img/global.svg" width="20" height="20" alt="">
+                  <img src="../assets/img/ar.svg" width="20" height="20" alt="">
                   العربية
                 </a>
               </li>
               <li>
                 <a class="dropdown-item d-flex align-items-center gap-2" href="index-en.html">
-                  <img src="assets/img/global.svg" width="20" height="20" alt="">
+                  <img src="../assets/img/en.svg" width="20" height="20" alt="">
                   English
                 </a>
               </li>
@@ -113,37 +114,42 @@
       </div>
     </nav>
     <!-- offcanvas -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-          القائمة
-        </h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="إغلاق القائمة">
-        </button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html">الرئيسية</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="aboutus.html">عن الشركة</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="education.html">التعليم العالي</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="job.html">التدريب المهني</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="guide.html">دليل بيتهوفن</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">تواصل معنا</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+  <div class="offcanvas-header d-flex align-items-center justify-content-between">
+    
+    <!-- اللوغو — على اليمين أول -->
+    <h5 class="offcanvas-title mb-0" id="offcanvasNavbarLabel">
+      <a href="index.html">
+        <img src="assets/img/logo.png" alt="شعار بيتهوفن سيتي" height="50">
+      </a>
+    </h5>
+
+    <!-- زر الإغلاق — على اليسار ثاني -->
+<button type="button" class="btn-close me-auto" data-bs-dismiss="offcanvas" aria-label="إغلاق القائمة"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="index.html">الرئيسية</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="aboutus.html">عن الشركة</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="education.html">التعليم العالي</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="job.html">التدريب المهني</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="guide.html">دليل بيتهوفن</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">تواصل معنا</a>
+      </li>
+    </ul>
+  </div>
+</div>
   </header>
   <!-- header end -->
       <!-- Breadcrumb start-->
@@ -175,16 +181,16 @@
         <div class="advice-check py-5">
           <h5 class="advice-text"> أهداف الدورة التأسيسية</h5>
           <div class="row">
-            <div class="col-6">
+            <div class="col-lg-6 col-md-6 col-sm-12">
               <p>✅ معادلة المؤهل الدراسي بشروط القبول الجامعي الألماني</p>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6 col-md-6 col-sm-12">
               <p>✅ تحسين اللغة الألمانية الأكاديمية</p>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6 col-md-6 col-sm-12">
               <p>✅  إعدادك بالمواد التخصصية المرتبطة بمجالك الجامعي</p>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6 col-md-6 col-sm-12">
               <p>✅ التأهيل لاجتياز امتحان التأهيل الجامعي (FSP)</p>
             </div>
           </div>
@@ -198,39 +204,36 @@
         </div>
         <div class="advice-stars my-5">
           <h5 class="mb-4 advice-text">أنواع دورات السنة التحضيرية</h5>
-          <div class="row g-3 row-custom">
-            <div class="col-4">
-              <div class="item">
-                <img src="../assets/img/education/starList.svg" alt="" />
-                <p class="">M‑Kurs: الطب، الأحياء، الصيدلة</p>
-              </div>
+          <ul class="star-list">
+            <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <li>
+                <p><img src="../assets/img/education/starList.svg" alt="" class="ms-2"/>M‑Kurs: الطب، الأحياء، الصيدلة</p>
+              </li>
             </div>
-            <div class="col-4">
-              <div class="item">
-                <img src="../assets/img/education/starList.svg" alt="" />
-                <p class="">T‑Kurs: الهندسة، الرياضيات، الفيزياء</p>
-              </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <li>
+                <p>                <img src="../assets/img/education/starList.svg" alt="" class="ms-2"/>T‑Kurs: الهندسة، الرياضيات، الفيزياء</p>
+              </li>
               
             </div>
-            <div class="col-4">
-              <div class="item">
-                <img src="../assets/img/education/starList.svg" alt="" />
-                <p class="">S‑Kurs: اللغات</p>
-              </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <li>
+                <p>                <img src="../assets/img/education/starList.svg" alt="" class="ms-2"/>S‑Kurs: اللغات</p>
+              </li>
             </div>
-            <div class="col">
-              <div class="item">
-                <img src="../assets/img/education/starList.svg" alt="" />
-                <p class=""> W‑Kurs: الإدارة، الاقتصاد، العلوم الاجتماعية</p>
-              </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <li>
+                <p>                 <img src="../assets/img/education/starList.svg" alt="" class="ms-2"/>W‑Kurs: الإدارة، الاقتصاد، العلوم الاجتماعية</p>
+              </li>
             </div>
-            <div class="col" style="margin-left: 13rem;">
-              <div class="item">
-                <img src="../assets/img/education/starList.svg" alt="" />
-                <p class="">G‑Kurs: التاريخ، الأدب، الإحصاء</p>
-              </div>
+            <div class="col-lg-4 col-md-6 col-sm-12" style="margin-left: 13rem;">
+              <li>
+                <p>                <img src="../assets/img/education/starList.svg" alt="" class="ms-2"/>G‑Kurs: التاريخ، الأدب، الإحصاء</p>
+              </li>
             </div>
           </div>
+          </ul>
         </div>
         <div class="head-info">
           <h5 class="advice-text">الفرق بين السنة التحضيرية من حيث إرتباطها بالجامعات العامة أو جامعات العلوم التطبيقية؟</h5>
@@ -245,18 +248,26 @@
         </div>
         <div class="advice-stars">
           <h5 class="note-text">ملاحظات هامة !!</h5>
-          <div class="item">
-            <img src="../assets/img/education/starList.svg" alt="" />
-            <p>اختر السنة التحضيرية المناسبة لتخصصك</p>
-          </div>
-          <div class="item">
-            <img src="../assets/img/education/starList.svg" alt="" />
-            <p>تحقق من صلاحية الشهادة للتخصص المطلوب</p>
-          </div>
-          <div class="item">
-            <img src="../assets/img/education/starList.svg" alt="" />
-            <p>تأكد إن كانت الشهادة تؤهلك لجميع الجامعات أو فقط لجامعات العلوم التطبيقية</p>
-          </div>
+          <ul class="star-list">
+             <li>
+   <p>                <img src="../assets/img/education/starList.svg" alt="" class="ms-2"/>اختر السنة التحضيرية المناسبة لتخصصك</p>
+ </li>
+            <li>
+   <p>                <img src="../assets/img/education/starList.svg" alt="" class="ms-2"/>تحقق من صلاحية الشهادة للتخصص المطلوب</p>
+ </li>
+            <li>
+   <p>                <img src="../assets/img/education/starList.svg" alt="" class="ms-2"/>تأكد إن كانت الشهادة تؤهلك لجميع الجامعات أو فقط لجامعات العلوم التطبيقية </p>
+            </li>
+            <li>
+   <p>                <img src="../assets/img/education/starList.svg" alt="" class="ms-2"/>اختر السنة التحضيرية المناسبة لتخصصك</p>
+ </li>
+ <li>
+   <p>                <img src="../assets/img/education/starList.svg" alt="" class="ms-2"/>تحقق من صلاحية الشهادة للتخصص المطلوب</p>
+ </li>
+ <li>
+   <p>                <img src="../assets/img/education/starList.svg" alt="" class="ms-2"/>تأكد إن كانت الشهادة تؤهلك لجميع الجامعات أو فقط لجامعات العلوم التطبيقية</p>
+ </li>
+          </ul>
         </div>
         <div class="head-info py-5">
           <h5 class="mb-4 advice-text">اختبار القبول للسنة التحضيرية (Aufnahmeprüfung)</h5>
@@ -269,16 +280,16 @@
         <div class="advice-check py-5">
           <h5 class="advice-text"> نصائح مهمة قبل التقديم</h5>
           <div class="row">
-            <div class="col-5">
+            <div class="col-lg-6 col-md-6 col-sm-12">
               <p>✅ تأكد أنك مؤهل للدورة المناسبة لتخصصك</p>
             </div>
-            <div class="col-7">
+            <div class="col-lg-6 col-md-6 col-sm-12">
               <p>✅  تحقق إن كانت الشهادة معترف بها في الجامعات العامة أو التطبيقية</p>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6 col-md-6 col-sm-12">
               <p>✅ تأكد أن الشهادة بعد الدورة صالحة للتخصص المطلوب</p>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6 col-md-6 col-sm-12">
               <p>✅ جهّز نفسك جيدًا لاجتياز امتحان القبول</p>
             </div>
           </div>

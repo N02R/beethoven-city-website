@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="../assets/css/all.min.css">
   <link rel="stylesheet" href="../assets/css/main.css">
   <link rel="stylesheet" href="../assets/css/style.css">
-  <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="css/edu-services.css">
   <link rel="stylesheet" href="../assets/css/header.css">
   <link rel="stylesheet" href="../assets/css/footer.css">
   <link rel="stylesheet" href="../assets/css/responsive.css">
@@ -54,6 +54,9 @@
         <a class="navbar-brand d-lg-none" href="index.html">
           <img src="../assets/img/logo.png" alt="شعار بيتهوفن سيتي" loading="lazy">
         </a>
+<a class="navbar-brand logo-scroll  " href="index.html">
+  <img src="../assets/img/logo.png" alt="logo">
+</a>
         <!-- Desktop Menu -->
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav gap-3">
@@ -88,22 +91,20 @@
           <div class="dropdown">
             <button class="btn lang-switch d-flex align-items-center justify-content-between" type="button"
               data-bs-toggle="dropdown" aria-expanded="false">
-              <div class="d-flex align-items-center gap-2">
-                <img src="../assets/img/home/global.svg" alt="Language" width="20" height="20">
+                <img src="../assets/img/home/global.svg" alt="Language">
                 <span>العربية</span>
-              </div>
-              <img src="../assets/img/home/arowwdown.svg" alt="فتح القائمة" width="12" height="12">
+              <img src="../assets/img/home/arowwdown.svg" alt="فتح القائمة">
             </button>
             <ul class="dropdown-menu dropdown-menu-end">
               <li>
                 <a class="dropdown-item d-flex align-items-center gap-2 active" href="index.html">
-                  <img src="../assets/img/global.svg" width="20" height="20" alt="">
+                  <img src="../assets/img/ar.svg" width="20" height="20" alt="">
                   العربية
                 </a>
               </li>
               <li>
                 <a class="dropdown-item d-flex align-items-center gap-2" href="index-en.html">
-                  <img src="assets/img/global.svg" width="20" height="20" alt="">
+                  <img src="../assets/img/en.svg" width="20" height="20" alt="">
                   English
                 </a>
               </li>
@@ -113,40 +114,110 @@
       </div>
     </nav>
     <!-- offcanvas -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-          القائمة
-        </h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="إغلاق القائمة">
-        </button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html">الرئيسية</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="aboutus.html">عن الشركة</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="education.html">التعليم العالي</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="job.html">التدريب المهني</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="guide.html">دليل بيتهوفن</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">تواصل معنا</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+  <div class="offcanvas-header d-flex align-items-center justify-content-between">
+    
+    <!-- اللوغو — على اليمين أول -->
+    <h5 class="offcanvas-title mb-0" id="offcanvasNavbarLabel">
+      <a href="index.html">
+        <img src="assets/img/logo.png" alt="شعار بيتهوفن سيتي" height="50">
+      </a>
+    </h5>
+
+    <!-- زر الإغلاق — على اليسار ثاني -->
+<button type="button" class="btn-close me-auto" data-bs-dismiss="offcanvas" aria-label="إغلاق القائمة"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="index.html">الرئيسية</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="aboutus.html">عن الشركة</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="education.html">التعليم العالي</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="job.html">التدريب المهني</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="guide.html">دليل بيتهوفن</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">تواصل معنا</a>
+      </li>
+    </ul>
+  </div>
+</div>
   </header>
   <!-- header end -->
-    <!-- footer start -->
+  <!-- Breadcrumb start-->
+  <div class="custom-container pt-5">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb justify-content-start">
+        <li class="breadcrumb-item"><a href="#">الرئيسية</a></li>
+        <li class="breadcrumb-item"><a href="#">التعليم العالي</a></li>
+        <li class="breadcrumb-item"><a>تحقق من شهاداتك التعليمية</a></li>
+      </ol>
+    </nav>
+  </div>
+  <!-- Breadcrumb end-->
+  <!-- custom-services start -->
+  <section class="custom-services py-5">
+    <div class="custom-container">
+      <div class="coverLetter-hero custom-hero"
+        style="background-image: url('../assets/img/education/servicesimg13.png'); background-position: center -9rem;">
+      </div>
+    </div>
+  </section>
+  <!-- custom-services end -->
+  <!-- custom-services-info start -->
+  <section class="custom-services-info py-5">
+    <div class="custom-container">
+      <div class="head-info">
+        <h2 class="main-text">
+          إفحص و تحقق من شهاداتك التعليمية السابقة
+        </h2>
+        <p class="par-text">
+          إذا كنت تخطط للتقديم إلى برنامج دراسي جامعي أو دراسات عليا في ألمانيا، فإن أول خطوة أساسية هي التحقق
+          من اعتراف ألمانيا بمؤهلك العلمي، سواء كانت: شهادة ثانوية عامة شهادة بكالوريوس أو ماجستير
+        </p>
+      </div>
+      <div class="advice-stars my-5">
+        <h5 class=" mb-4 note-text"> ملاحظات هامة !!</h5>
+        <ul class="star-list">
+        <li>
+          <p><img src="../assets/img/education/starList.svg" alt="" class="ms-2"/>شهادات التعليم الثانوي من بعض الدول لا تؤهلك مباشرة للالتحاق بالجامعات الألمانية</p>
+        </li>
+        <li>
+          <p><img src="../assets/img/education/starList.svg" alt="" class="ms-2"/>يجب عليك إكمال السنة التحضيرية أو اجتياز شهادات لغة معترف بها مثل DSH أو TestDaF</p>
+        </li>
+        </ul>
+      </div>
+      <div class="links">
+        <p class="mt-5">لفحص الإعتراف بشهادتك ومتطلبات القبول لدى الجامعات الألمانية، وهل ماتحمله من شهادة
+          علمية يؤهلك لدخول الجامعات الألمانية، يمكنك إستخدام الروابط التالية:</p>
+        <a href="#">https://anabin.kmk.org/anabin.html</a>
+        <a href="#">https://www.uni-assist.de</a>
+        <p class="mt-5">أو يمكنك التواصل مباشرةً مع الجامعة التي ترغب الدراسة بِها لمعرفة الشرطين الأساسيين
+          لقبول مؤهلك العلمي وإمكانِية تقديم طلب التسجيل في الجامعة وهما:</p>
+        <span class="span-list">1. الإعتراف بمؤهلاتك العلمية السابقة في ألمانيا.</span>
+        <span class="span-list">2. شروط القبول لدى الجامعات الألمانية أي: (ما يسبُق عليك إنجازه لبدء دراستك في
+          الجامعات الألمانية مثل الدورة التأسيسية (السنة التحضيرية) أم شهادات لغة ألمانية مثل DSH, TestDaf
+          وغيرها</span>
+        <p class="mt-5">في حال تم الإعتراف بمؤهلاتك العلمية السابقة في ألمانيا، فمن المرجح أنك (وفي معظم
+          الحالات) ستقوم بالإلتحاق إما <span style="color: #66aeee;"> بالدورة التأسيسية (السنة التحضيرية)
+            “Studienkolleg” </span>او <span style="color: #66aeee;">بالدورة التحضيرية لشهادة اللغة
+            الألمانية، مثل DSH ،TestD</span>، أو غيرها. مما يجعل شهادتك الدراسية مُؤهلة (مُحققة لشروط)
+          للإلتحاق في الجامعات الألمانية.
+        </p>
+      </div>
+
+    </div>
+  </section>
+  <!-- custom-services-info end -->
+  <!-- footer start -->
   <section class="consult-banner-section">
     <div class="container-fluid custom-container">
       <div class="consult-banner">

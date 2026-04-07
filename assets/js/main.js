@@ -23,6 +23,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+
+// ===== Active link highlight =====
+const currentPath = window.location.pathname;
+document.querySelectorAll("#main-header .nav-link").forEach(link => {
+  const linkPath = new URL(link.href).pathname;
+  link.classList.toggle("active", currentPath === linkPath);
+});
+
+
   /* ===== Language Dropdown Logic ===== */
   const langItems = document.querySelectorAll('.dropdown-item');
   langItems.forEach(item => {
@@ -84,3 +93,41 @@ function initCarouselDots() {
     }
   });
 }
+
+// الحصول على الهيدر
+const header = document.querySelector('header');
+
+// ارتفاع الـ scroll الذي يبدأ عنده التأثير
+const scrollThreshold = 50;
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > scrollThreshold) {
+    // إضافة class عند scroll للأسفل
+    header.classList.add('scrolled');
+  } else {
+    // إزالة class عند الرجوع للأعلى
+    header.classList.remove('scrolled');
+  }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll(".count-info span");
+  
+  counters.forEach(counter => {
+    const targetText = counter.textContent.trim(); // مثال: "700K+"
+    let target = parseInt(targetText.replace(/\D/g, "")); // يزيل الحروف
+    let increment = Math.ceil(target / 200); // سرعة العد
+    
+    let current = 0;
+    const updateCounter = () => {
+      if (current < target) {
+        current += increment;
+        counter.textContent = current + (targetText.replace(/\d/g, "")); // يحافظ على + أو K
+        requestAnimationFrame(updateCounter);
+      } else {
+        counter.textContent = targetText; // يصل للقيمة النهائية
+      }
+    };
+    updateCounter();
+  });
+});
