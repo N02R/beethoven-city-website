@@ -133,4 +133,32 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-getSiteInfo();
+document.addEventListener("DOMContentLoaded", async () => {
+  
+  const data = await WordPressAPI.getSiteInfo();
+  
+  if (data) {
+    console.log("WP DATA:", data);
+    
+    const title = document.getElementById("site-title");
+    if (title) {
+      title.textContent = data.name;
+    }
+  }
+  
+});
+
+document.addEventListener("DOMContentLoaded", async () => {
+  
+  const data = await WordPressAPI.getSiteInfo();
+  
+  if (data) {
+    console.log("WP DATA:", data);
+    
+    const title = document.getElementById("site-title");
+    if (title) {
+      title.textContent = data.name;
+    }
+  }
+  
+});
