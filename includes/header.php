@@ -101,9 +101,9 @@
     
     <!-- اللوغو — على اليمين أول -->
     <h5 class="offcanvas-title mb-0" id="offcanvasNavbarLabel">
-      <a href="index.html">
-        <img src="assets/img/logo.png" alt="شعار بيتهوفن سيتي" height="50">
-      </a>
+      <a href="index.php">
+  <img id="site-logo" src="assets/img/logo.png" alt="شعار بيتهوفن سيتي" height="50">
+</a>
     </h5>
 
     <!-- زر الإغلاق — على اليسار ثاني -->
