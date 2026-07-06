@@ -133,18 +133,4 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-fetch("http://127.0.0.1:8000/wp-json")
-  .then(res => res.json())
-  .then(data => {
-    
-    const logo = document.getElementById("site-logo");
-    
-    // إذا WordPress فيه أي أيقونة موقع
-    if (logo && data.site_icon_url) {
-      logo.src = data.site_icon_url;
-    }
-    
-  })
-  .catch(err => {
-    console.log("API Error:", err);
-  });
+getSiteInfo();
