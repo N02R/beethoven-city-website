@@ -135,38 +135,47 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", async () => {
   
+  /* ================= SETTINGS ================= */
   const settings = await WordPressAPI.getSettings();
   
   if (settings) {
     
-    // 🔹 تغيير اسم الموقع
+    // Title
     const title = document.getElementById("site-title");
     if (title) title.textContent = settings.name;
     
-    // 🔹 تغيير اللوجو
-    const logo = document.getElementById("site-logo");
-    if (logo && settings.logo) {
-      logo.src = settings.logo;
-    }
+    // Logo (كل الأماكن)
+    const logos = [
+      document.getElementById("site-logo"),
+      document.getElementById("site-logo-mobile"),
+      document.getElementById("site-logo-mobile-offcanvas")
+    ];
+    
+    logos.forEach(img => {
+      if (img && settings.logo) {
+        img.src = settings.logo;
+      }
+    });
   }
   
-});
-
-document.addEventListener("DOMContentLoaded", async () => {
-  
+  /* ================= MENU ================= */
   try {
     const res = await fetch("http://172.16.2.102:8000/wp-json/bcs/v1/menu");
     const menu = await res.json();
     
-    const nav = document.getElementById("main-menu");
+    const desktop = document.getElementById("main-menu-desktop");
+    const mobile = document.getElementById("main-menu-mobile");
     
-    if (nav && menu.length) {
-      nav.innerHTML = menu.map(item => `
-        <a href="${item.url}" class="nav-link">
+    const html = menu.map(item => `
+      <li class="nav-item">
+        <a class="nav-link" href="${item.url}">
           ${item.title}
         </a>
-      `).join("");
-    }
+      </li>
+    `).join("");
+    
+    if (desktop) desktop.innerHTML = html;
+    if (mobile) mobile.innerHTML = html;
     
   } catch (err) {
     console.log("Menu Error:", err);
