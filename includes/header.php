@@ -5,8 +5,14 @@
       <div class="container-fluid custom-container d-flex align-items-center justify-content-between">
         <!-- Logo (Desktop) -->
         <a class="navbar-brand d-none d-lg-flex" href="index.html">
-          <img src="assets/img/logo.png" alt="شعار بيتهوفن سيتي" width="178" height="72" loading="lazy">
-        </a>
+  <img 
+    id="site-logo"
+    src="assets/img/logo.png" 
+    alt="شعار بيتهوفن سيتي" 
+    width="178" 
+    height="72" 
+    loading="lazy">
+</a>
         <!-- Spacer -->
         <div class="flex-grow-1 d-none d-lg-flex more"></div>
         <!-- Social Icons -->
