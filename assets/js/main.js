@@ -138,27 +138,13 @@ document.addEventListener("DOMContentLoaded", async () => {
   const data = await WordPressAPI.getSiteInfo();
   
   if (data) {
-    console.log("WP DATA:", data);
     
-    const title = document.getElementById("site-title");
-    if (title) {
-      title.textContent = data.name;
-    }
-  }
-  
-});
-
-document.addEventListener("DOMContentLoaded", async () => {
-  
-  const data = await WordPressAPI.getSiteInfo();
-  
-  if (data) {
-    console.log("WP DATA:", data);
+    document.body.innerHTML += `
+      <div style="position:fixed;bottom:0;left:0;background:black;color:white;padding:10px;z-index:9999">
+        WP NAME: ${data.name}
+      </div>
+    `;
     
-    const title = document.getElementById("site-title");
-    if (title) {
-      title.textContent = data.name;
-    }
   }
   
 });
