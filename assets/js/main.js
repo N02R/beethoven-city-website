@@ -138,21 +138,20 @@ document.addEventListener("DOMContentLoaded", async () => {
   const data = await WordPressAPI.getSiteInfo();
   
   if (data) {
-    
     document.body.innerHTML += `
       <div style="position:fixed;bottom:0;left:0;background:black;color:white;padding:10px;z-index:9999">
         WP NAME: ${data.name}
       </div>
     `;
-    
   }
   
   const logo = await WordPressAPI.getLogo();
-
-if (logo) {
-  const img = document.getElementById("site-logo");
-  if (img) {
-    img.src = logo;
+  
+  if (logo) {
+    const img = document.getElementById("site-logo");
+    if (img) {
+      img.src = logo;
+    }
   }
-}
+  
 });

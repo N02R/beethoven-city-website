@@ -9,17 +9,16 @@ const WordPressAPI = {
       console.log("WP ERROR:", err);
       return null;
     }
-  }
+  },
+  
   getLogo: async function() {
-  try {
-    const res = await fetch(this.baseURL);
-    const data = await res.json();
-    
-    return data.site_icon_url || null;
-  } catch (err) {
-    console.log("Logo Error:", err);
-    return null;
+    try {
+      const res = await fetch(this.baseURL);
+      const data = await res.json();
+      return data.site_icon_url || null;
+    } catch (err) {
+      console.log("Logo Error:", err);
+      return null;
+    }
   }
-}
 };
-
