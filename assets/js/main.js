@@ -147,4 +147,12 @@ document.addEventListener("DOMContentLoaded", async () => {
     
   }
   
+  const logo = await WordPressAPI.getLogo();
+
+if (logo) {
+  const img = document.getElementById("site-logo");
+  if (img) {
+    img.src = logo;
+  }
+}
 });
