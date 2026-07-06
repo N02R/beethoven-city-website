@@ -135,23 +135,41 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", async () => {
   
-  const data = await WordPressAPI.getSiteInfo();
+  const settings = await WordPressAPI.getSettings();
   
-  if (data) {
-    document.body.innerHTML += `
-      <div style="position:fixed;bottom:0;left:0;background:black;color:white;padding:10px;z-index:9999">
-        WP NAME: ${data.name}
-      </div>
-    `;
+  if (settings) {
+    
+    // 🔹 تغيير اسم الموقع
+    const title = document.getElementById("site-title");
+    if (title) title.textContent = settings.name;
+    
+    // 🔹 تغيير اللوجو
+    const logo = document.getElementById("site-logo");
+    if (logo && settings.logo) {
+      logo.src = settings.logo;
+    }
   }
   
-  const logo = await WordPressAPI.getLogo();
+});
+
+document.addEventListener("DOMContentLoaded", async () => {
   
-  if (logo) {
-    const img = document.getElementById("site-logo");
-    if (img) {
-      img.src = logo;
+  try {
+    const res = await fetch("http://172.16.2.102:8000/wp-json/bcs/v1/menu");
+    const menu = await res.json();
+    
+    const nav = document.getElementById("main-menu");
+    
+    if (nav && menu.length) {
+      nav.innerHTML = menu.map(item => `
+        <a href="${item.url}" class="nav-link">
+          ${item.title}
+        </a>
+      `).join("");
     }
+    
+  } catch (err) {
+    console.log("Menu Error:", err);
   }
   
 });
